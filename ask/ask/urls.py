@@ -3,7 +3,7 @@ from django.conf.urls import patterns, include, url
 from django.contrib import admin
 admin.autodiscover()
 
-urlpatterns = patterns(qa.views',
+urlpatterns = patterns('qa.views',
     url(r'^$', 'test'),
     url(r'^login/.*$', 'test', name='login'),
     url(r'^signup/.*', 'test', name='signup'),
